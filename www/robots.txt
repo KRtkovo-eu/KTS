@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /images/
+Disallow: /attachment/
+Disallow: /gallery_data/
+Sitemap: http://zpnj.krtkovo.eu/sitemap.xml

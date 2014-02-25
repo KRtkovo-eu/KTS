@@ -1,0 +1,16 @@
+  <div id="container">
+    <div id="content">
+        <h1>Alba fotogalerie</h1>
+        <div id="gallery">
+          <TMPL_LOOP Albums>
+            <a href="p-photos?album=<TMPL_VAR title>">
+              <div class="album">
+                <img src="gallery_data/<TMPL_VAR title>/thumbs/<TMPL_VAR thumb>" alt="<TMPL_VAR title>" />
+                <h2><TMPL_VAR title></h2>
+              </div>
+            </a>
+          </TMPL_LOOP>
+          <div class="clear"></div>
+        </div>
+    </div>
+  </div>

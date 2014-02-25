@@ -1,0 +1,28 @@
+<h2>SprĂˇva ÄŤlĂˇnkĹŻ</h2>
+
+<div id="newTopicBtn">
+  <a href="p-editTopic?tid=NEW">+ VytvoĹ™it novĂ˝ ÄŤlĂˇnek</a>
+</div>
+
+<table>
+  <tr class="headLine">
+    <th><a href="p-topics?order=id">ID</a></th>
+    <th><a href="p-topics?order=categ">Kategorie</a></th>
+    <th><a href="p-topics?order=title">Titulek</a></th>
+    <th><a href="p-topics?order=date">Datum vydĂˇnĂ­</a></th>
+    <th>Akce</th>
+  </tr>
+  
+  <TMPL_LOOP Topics>
+  <tr>
+    <td><TMPL_VAR topicId></td>
+    <td><TMPL_VAR topicCateg></td>
+    <td><TMPL_VAR topicTitle></td>
+    <td><TMPL_VAR topicDate></td>
+    <td>
+      <a href="p-editTopic?tid=<TMPL_VAR topicId>">Upravit</a>
+    </td>
+  </tr>
+</TMPL_LOOP>
+</table>
+

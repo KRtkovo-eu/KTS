@@ -1,0 +1,16 @@
+  <div id="container">
+    <div id="content">
+        <h1>Galerie: <TMPL_VAR album></h1>
+        <div id="gallery">
+          <TMPL_LOOP Photos>
+            <a href="gallery_data/<TMPL_VAR album>/<TMPL_VAR elem>" rel="lightbox[<TMPL_VAR album>]">
+              <div>
+                <img src="gallery_data/<TMPL_VAR album>/thumbs/<TMPL_VAR elem>" alt="<TMPL_VAR album>" />
+              </div>
+            </a>
+          </TMPL_LOOP>
+          <div class="clear"></div>
+        </div>
+        <a href="p-gallery">ZpÄ›t na vĂ˝bÄ›r alba</a>
+    </div>
+  </div>

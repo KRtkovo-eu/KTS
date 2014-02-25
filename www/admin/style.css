@@ -1,0 +1,330 @@
+body {
+  background:url('images/textured_paper.png') fixed;
+  font-family:"Share", sans-serif;
+}
+
+input {
+  font-family:"Share", sans-serif;
+}
+
+h2 {
+  margin:30px 20px 15px 20px;
+  color:#666666;
+}
+
+form {
+  width:100%;
+  text-align:center;
+  margin:auto;
+  padding:0 0 30px 0;
+}
+
+input[type=text] {
+  width:500px;
+  border:solid 1px #cccccc;
+  padding:5px;
+}
+
+input[type=text].short {
+  width:180px;
+}
+
+input[type=password] {
+  border:solid 1px #cccccc;
+  padding:5px;
+}
+
+input[type=submit], input[type=button] {
+  width:150px;
+  border:solid 1px #cccccc;
+  padding:5px;
+  cursor:pointer;
+  cursor:hand;
+}
+
+input[type=text]:hover, input[type=submit]:hover, input[type=button]:hover, input[type=password]:hover {
+  border:solid 1px #666666;
+}
+
+textarea {
+  width:800px;
+  min-height:600px;
+  border:solid 1px #cccccc;
+  padding:5px;
+  margin:auto;
+}
+
+table {
+  width:800px;
+  margin:auto;
+  text-align:center;
+  border-spacing:0;
+  border-collapse:collapse;
+}
+
+tr:hover {
+  background:#99CC00 !important;
+  color:#ffffff;
+}
+
+tr.headLine {
+  background:#CC0033 !important;
+  color:#ffffff;
+}
+
+tr.users {
+  background:#0066CC !important;
+  color:#ffffff;
+}
+
+tr.photos {
+  background:#FF9900 !important;
+  color:#ffffff;
+}
+
+tr:nth-child(odd) {
+  background:#cccccc;
+}
+
+tr:nth-child(even) {
+  background:#ffffff;
+}
+
+th {
+  font-weight:normal;
+}
+
+th a:link, th a:visited {
+  color:#ffffff;
+}
+
+th a:hover {
+  color:#000000;
+}
+
+a:link, a:visited {
+  color:#0033ff;
+}
+
+a:hover {
+  color:#000000;
+}
+
+#container {
+  width:1000px;
+  margin:auto;
+}
+
+#logo {
+  width:250px;
+  float:left;
+}
+
+#info {
+  float:right;
+  padding:0 20px 0 20px;
+  width:710px;
+  font-size:30pt;
+  font-style:italic;
+  font-weight:bold;
+  text-align:right;
+  line-height:100px;
+}
+
+#menu {
+  margin:20px 0 0 0;
+  padding:0;
+
+}
+
+#menu li {
+  list-style:none;
+  float:left;
+  width:150px;
+  padding:5px 5px 5px 10px;
+  margin:0 5px 0 0;
+}
+
+#menu li.config {
+  background:#99CC00;
+  color:#ffffff;
+}
+
+#menu li.config:hover {
+  background:#ffffff;
+  color:#99CC00;
+}
+
+#menu li.topics {
+  background:#CC0033;
+  color:#ffffff;
+}
+
+#menu li.topics:hover {
+  background:#ffffff;
+  color:#cc0033;
+}
+
+#menu li.photos {
+  background:#FF9900;
+  color:#ffffff;
+}
+
+#menu li.photos:hover {
+  background:#ffffff;
+  color:#FF9900;
+}
+
+#menu li.users {
+  background:#0066CC;
+  color:#ffffff;
+}
+
+#menu li.users:hover {
+  background:#ffffff;
+  color:#0066CC;
+}
+
+#info.config {
+  color:#99CC00;
+}
+
+#info.topics {
+  color:#CC0033;
+}
+
+#info.photos {
+  color:#FF9900;
+}
+
+#info.error {
+  color:#ff0000;
+}
+
+#info.users {
+  color:#0066CC;
+}
+
+#content {
+  background:#ffffff;
+  padding:5px 20px 10px 20px;
+}
+
+#content {
+  border:solid 5px;
+}
+
+#content.config {
+  border-color:#99CC00;
+}
+
+#content.error {
+  border-color:#ff0000;
+}
+
+#content.topics {
+  border-color:#CC0033;
+}
+
+#content.photos {
+  border-color:#FF9900;
+}
+
+#content.users {
+  border-color:#0066CC;
+}
+
+
+#update {
+  width:600px;
+  margin:auto;
+  text-align:center;
+  line-height:16pt;
+}
+
+#update.success {
+  border:solid 1px #99CC00;
+}
+
+#update.success div.fullRow {
+  background:#99CC00;
+}
+
+#update.wrong {
+  border:solid 1px #CC0033;
+}
+
+#update.wrong div.fullRow {
+  background:#CC0033;
+}
+
+#update.available {
+  border:solid 1px #66CCFF;
+}
+
+#update.available div.fullRow {
+  background:#66CCFF;
+}
+
+#update div.fullRow {
+  color:#ffffff;
+  font-weight:bold;
+  text-align:center;
+  padding:5px;
+  margin:0 0 5px 0;
+}
+
+#update a.visible {
+  display:block;
+  background:#cccccc;
+  border:solid 1px #666666;
+  padding:3px;
+  width:100px;
+  margin:auto;
+  margin-top:5px;
+}
+
+#update a.hidden {
+  display:none;
+}
+
+#successBox {
+  width:300px;
+  border:solid 1px #666666;
+  margin:auto;
+  margin-top:10px;
+  font-size:16pt;
+  text-align:center;
+  line-height:20pt;
+  font-style:italic;
+}
+
+#newTopicBtn {
+  margin:0 0 25px 30px;
+}
+
+#footer {
+  padding:10px;
+  text-align:right;
+}
+
+#footer a:link, #footer a:visited {
+  color:#666666;
+  text-decoration:underline;
+}
+
+#footer a:hover {
+  color:#000000;
+}
+
+.clear {
+  clear:both;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+.center {
+  text-align:center;
+}

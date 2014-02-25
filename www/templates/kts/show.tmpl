@@ -1,0 +1,22 @@
+  <div id="container">
+    <div id="content">
+      <h1><TMPL_VAR title></h1>
+      <TMPL_VAR content ESCAPE="NONE">
+      
+      
+      <TMPL_IF control>
+      <hr />
+      <table>
+        <tr>
+          <th>PĹ™Ă­loha</th>
+        </tr>
+      
+        <TMPL_LOOP attachments>
+        <tr>
+          <td><a href="attachment/<TMPL_VAR id>/<TMPL_VAR title>"><TMPL_VAR title></a></td>
+        </tr>
+        </TMPL_LOOP>
+      </table>
+      </TMPL_IF>
+    </div>
+  </div>

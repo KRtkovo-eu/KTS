@@ -1,0 +1,8 @@
+#RewriteBase /
+# Chybove stranky
+ErrorDocument 404 http://CHANGEME/p-404
+#
+# Povoleni rewrite enginu a pravidla
+RewriteEngine on
+RewriteRule ^p-(.*) index.php?page=$1 [QSA,NC]
+#
