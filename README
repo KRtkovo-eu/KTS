@@ -1,33 +1,32 @@
-KTS 3.0 Instalace
------------------
-1. zkopĂ­rovat obsah sloĹľky www na server.
-2. nastavit chmod 0777 pro sloĹľky /attachment, /gallery_data, /images/upload
-3. nastavit v .config.php pĹ™Ă­stupovĂˇ prĂˇva pro MySQL.
-4. v .htaccess nastavit RewriteBase a ErrorDocument.
-5. v /admin/.htaccess nastavit RewriteBase
-6. v /admin/.htpasswd smazat default ĂşÄŤet a nahradit svĂ˝mi.
-7. nahrĂˇt do MySQL databĂˇze pĹ™iloĹľenĂ˝ sql balĂ­k.
+﻿KTS 3.0.x installation
+----------------------
+1. copy content of /www/ to server
+2. set chmod to 0777 for /www/attachment, /www/gallery_data
+3. set MySQL connection in /www/.config.php
+4. in /www/.htaccess set RewriteBase and ErrorDocument
+5. in /www/admin/.htaccess set RewriteBase
+6. in /www/admin/.htpasswd replace default account by your own
+7. upload sql file to MySQL database
 
-Administrace je typicky pĹ™Ă­stupnĂˇ z {root}/admin (username: default, password: aaaaaa)
-
+Administration is accessible from /www/admin/ (username: default, password: aaaaaa)
 
 Licensing
 ======================================================
 KTS 3.0 - KRtek's Topic System
 ------------------------------
  - GNU GPL v.3
-OndĹ™ej Kotas (KRtkovo.eu), 2014
+Ondřej Kotas (KRtkovo.eu), 2014
 
 KTS template
 ------------
  - Creative Commons BY SA 4.0
-OndĹ™ej Kotas (KRtkovo.eu), 2014
+Ondřej Kotas (KRtkovo.eu), 2014
 
 Modul HTMLTMPL
 --------------
  - GNU GPL v.3
-TomĂˇĹˇ StĂ˝blo, 2001
-Jakub VĂˇrna, 2007
+Tomáš Stýblo, 2001
+Jakub Vrána, 2007
 
 Modul TEXY!
 -----------
