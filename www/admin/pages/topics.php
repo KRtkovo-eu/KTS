@@ -1,6 +1,14 @@
-<?php
+﻿<?php
   require("../functions/core.php");
-  
+
+  $categList = $db->QueryArray("id,title","kts_categories");
+  $categs = $tproc->loop("Categories", "categId", "categName");
+  foreach ($categList as $d) {
+    $categs->push($d[0], $d[1]);
+  }
+  $categs->commit();
+
+
   if(isset($_GET['order'])) {
     $order = $_GET['order'];
   }

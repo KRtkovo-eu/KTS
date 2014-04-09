@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $tproc->set("title", $db->QueryValue("value","kts_config","name='title'"));
 $tproc->set("description", $db->QueryValue("value","kts_config","name='description'"));
 $tproc->set("keywords", $db->QueryValue("value","kts_config","name='keywords'"));
@@ -16,12 +16,12 @@ if($ktsNewVersion > $ktsVersion) {
 }
 elseif($ktsNewVersion == $ktsVersion) {
   $tproc->set("updateDiv", "success");
-  $tproc->set("updateComment", "MĂˇte aktuĂˇlnĂ­ verzi");
+  $tproc->set("updateComment", "Máte aktuální verzi");
   $tproc->set("updateButton", "hidden");
 }
 else {
   $tproc->set("updateDiv", "wrong");
-  $tproc->set("updateComment", "Instalace nenĂ­ standardnĂ­");
+  $tproc->set("updateComment", "Instalace není standardní");
   $tproc->set("updateButton", "visible");
   $tproc->set("updateLink", $ktsUpdateLink);
 }

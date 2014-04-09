@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if(isset($_GET['page'])) {
   $page = $_GET['page'];
 }
@@ -10,7 +10,7 @@ switch($page) {
   case "config":
   case "edit":
     $class = "config";
-    $info = "Konfigurace portĂˇlu";
+    $info = "Konfigurace portálu";
     break;
   
   case "topics":
@@ -19,7 +19,7 @@ switch($page) {
   case "delTopic":
   case "uploadAttach":
     $class = "topics";
-    $info = "SprĂˇva pĹ™Ă­spÄ›vkĹŻ";
+    $info = "Správa příspěvků";
     break;
   
   case "photos":
@@ -33,7 +33,7 @@ switch($page) {
   case "editUsers":
   case "delUser":
     $class = "users";
-    $info = "SprĂˇva uĹľivatelĹŻ";
+    $info = "Správa uživatelů";
     break;
       
   case "404":

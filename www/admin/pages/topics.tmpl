@@ -1,7 +1,35 @@
-<h2>SprĂˇva ÄŤlĂˇnkĹŻ</h2>
+﻿<h2>Správa kategorií</h2>
+<table>
+  <tr class="headLine">
+    <th>ID</th>
+    <th>Název</th>
+    <th>Akce</th>
+  </tr>
+
+  <TMPL_LOOP Categories>
+  <form method="post" action="p-editCateg">
+    <tr>
+      <td><TMPL_VAR categId></td>
+      <td><input type="text" value="<TMPL_VAR categName>" name="categ_title" /><input type="hidden" name="categ_id" value="<TMPL_VAR categId>" /></td>
+      <td><input type="submit" value="Přejmenovat" />&nbsp;<a href="p-delCateg?id=<TMPL_VAR categId>" onclick="return confirm('Opravdu chcete vymazat kategorii <TMPL_VAR categName>?');">Smazat</a></td>
+    </tr>
+  </form>
+  </TMPL_LOOP>
+    <tr class="headLine">
+      <th colspan="3">Vytvořit novou kategorii</th>
+    </tr>
+    <tr>
+      <form method="post" action="p-editCateg">
+        <td colspan="2"><input type="text" name="categ_title" /><input type="hidden" name="categ_id" value="new" /></td>
+        <td><input type="submit" value="Vytvořit" /></td>
+      </form>
+    </tr>
+</table>
+
+<h2>Správa článků</h2>
 
 <div id="newTopicBtn">
-  <a href="p-editTopic?tid=NEW">+ VytvoĹ™it novĂ˝ ÄŤlĂˇnek</a>
+  <a href="p-editTopic?tid=NEW">+ Vytvořit nový článek</a>
 </div>
 
 <table>
@@ -9,7 +37,7 @@
     <th><a href="p-topics?order=id">ID</a></th>
     <th><a href="p-topics?order=categ">Kategorie</a></th>
     <th><a href="p-topics?order=title">Titulek</a></th>
-    <th><a href="p-topics?order=date">Datum vydĂˇnĂ­</a></th>
+    <th><a href="p-topics?order=date">Datum vydání</a></th>
     <th>Akce</th>
   </tr>
   

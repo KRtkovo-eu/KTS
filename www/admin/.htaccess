@@ -1,4 +1,4 @@
-#RewriteBase /admin/
+﻿#RewriteBase /admin/
 RewriteEngine on
 RewriteRule ^p-(.*) index.php?page=$1 [QSA,NC]
 #

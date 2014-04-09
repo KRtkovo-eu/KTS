@@ -1,25 +1,25 @@
-<?php
+﻿<?php
   if(isset($_POST['id'])) {
     $id = $_POST['id'];
     
     if($id == "NEW") {
-      if($db->Insert("kts_topics",array("categ", "title", "value", "date"), array("1", $_POST['title'], $_POST['content'], date("Y-m-d H:i:s")))) {
+      if($db->Insert("kts_topics",array("categ", "title", "value", "date"), array($_POST['categ'], $_POST['title'], $_POST['content'], date("Y-m-d H:i:s")))) {
         $tproc->set("title", $_POST['title']);
-        $tproc->set("description", "ĂšspÄ›ĹˇnÄ› zapsĂˇno");
+        $tproc->set("description", "Úspěšně zapsáno");
       }
       else {
         $tproc->set("title", $_POST['title']);
-        $tproc->set("description", "ZĂˇpis neprobÄ›hl ĂşspÄ›ĹˇnÄ›");
+        $tproc->set("description", "Zápis neproběhl úspěšně");
       }
     }
     else {
-      if($db->Update("kts_topics",array("title"=>$_POST['title'], "value"=>$_POST['content'], "date"=>date("Y-m-d H:i:s")),"id='{$id}'")) {
+      if($db->Update("kts_topics",array("categ"=>$_POST['categ'], "title"=>$_POST['title'], "value"=>$_POST['content'], "date"=>date("Y-m-d H:i:s")),"id='{$id}'")) {
         $tproc->set("title", $_POST['title']);
-        $tproc->set("description", "ĂšspÄ›ĹˇnÄ› zaktualizovĂˇno");
+        $tproc->set("description", "Úspěšně zaktualizováno");
       }
       else {
         $tproc->set("title", $_POST['title']);
-        $tproc->set("description", "Aktualizace neprobÄ›hla ĂşspÄ›ĹˇnÄ›");
+        $tproc->set("description", "Aktualizace neproběhla úspěšně");
       }
     }
   }

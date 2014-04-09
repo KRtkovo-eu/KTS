@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 function delete_dir($src) { 
     $dir = opendir($src);
     while(false !== ( $file = readdir($dir)) ) { 
@@ -35,8 +35,8 @@ if(isset($_GET['action'])) {
         if(mkdir("../gallery_data/{$album}") && chmod("../gallery_data/{$album}", 0777)) {
           if(mkdir("../gallery_data/{$album}/thumbs") && chmod("../gallery_data/{$album}/thumbs", 0777)) {
             if(mkdir("../gallery_data/{$album}/orig") && chmod("../gallery_data/{$album}/orig", 0777)) {
-              $tproc->set("title", "VytvoĹ™eno");
-              $tproc->set("description", "Album {$album} ĂşspÄ›ĹˇnÄ› vytvoĹ™eno.");
+              $tproc->set("title", "Vytvořeno");
+              $tproc->set("description", "Album {$album} úspěšně vytvořeno.");
             }
           }
         }
@@ -47,8 +47,8 @@ if(isset($_GET['action'])) {
       if(isset($_GET['album'])) {
         $album = $_GET['album'];
         delete_dir("../gallery_data/{$album}");
-        $tproc->set("title", "SmazĂˇno");
-        $tproc->set("description", "Album {$album} ĂşspÄ›ĹˇnÄ› smazĂˇno.");
+        $tproc->set("title", "Smazáno");
+        $tproc->set("description", "Album {$album} úspěšně smazáno.");
       }
       break;
       
@@ -60,7 +60,7 @@ if(isset($_GET['action'])) {
 
         if((rename("../gallery_data/{$albumOld}", "../gallery_data/{$album}")) && chmod("../gallery_data/{$album}", 0777)) {
           $tproc->set("title", "PĹ™ejmenovĂˇno");
-          $tproc->set("description", "Album {$album} ĂşspÄ›ĹˇnÄ› pĹ™ejmenovĂˇno.");
+          $tproc->set("description", "Album {$album} úspěšně přejmenováno.");
         }
       }
       break;

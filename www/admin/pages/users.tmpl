@@ -1,11 +1,11 @@
-<h2>SprĂˇva uĹľivatelĹŻ</h2>
+﻿<h2>Správa uživatelů</h2>
 
 <form method="post" action="p-editUsers">
   <table>
     <tr class="users">
       <th><a href="p-users?order=id">ID</a></th>
-      <th><a href="p-users?order=uco">UÄŚO</a></th>
-      <th><a href="p-users?order=name">JmĂ©no</a></th>
+      <th><a href="p-users?order=uco">UČO</a></th>
+      <th><a href="p-users?order=name">Jméno</a></th>
       <th>Heslo</th>
       <th>Akce</th>
     </tr>
@@ -16,12 +16,12 @@
       <td><TMPL_VAR userUco></td>
       <td><TMPL_VAR userName></td>
       <td><input type="password" name="passwd" /></td>
-      <td><input type="submit" value="ZmÄ›nit heslo" />&nbsp;<a href="p-delUser?id=<TMPL_VAR userId>" onclick="return confirm('Opravdu chcete vymazat uĹľivatele <TMPL_VAR userName>?');">Smazat uĹľivatele</a></td>
+      <td><input type="submit" value="Změnit heslo" />&nbsp;<a href="p-delUser?id=<TMPL_VAR userId>" onclick="return confirm('Opravdu chcete vymazat uživatele <TMPL_VAR userName>?');">Smazat uživatele</a></td>
     </tr>
     </TMPL_LOOP>
     
     <tr class="users">
-      <th colspan="5">NovĂ˝ uĹľivatel</th>
+      <th colspan="5">Nový uživatel</th>
     </tr>
     
     <tr>
@@ -29,7 +29,7 @@
       <td><input type="text" name="uco" class="short" /></td>
       <td><input type="text" name="name" class="short" /></td>
       <td><input type="password" name="passwd" /></td>
-      <td><input type="submit" value="UloĹľit" /></td>
+      <td><input type="submit" value="Uložit" /></td>
     </tr>
   </table>
 </form>

@@ -1,4 +1,4 @@
-O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:17:"pages/config.tmpl";s:7:"_tokens";a:46:{i:0;s:115:"<h2>Titulek portĂˇlu</h2>
+O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:17:"pages/config.tmpl";s:7:"_tokens";a:46:{i:0;s:118:"﻿<h2>Titulek portálu</h2>
 <p>
   <form method="post" action="p-edit">
     <input type="text" name="title" value="";i:1;s:2:"";i:2;s:5:"title";i:3;N;i:4;N;i:5;s:250:"" />
@@ -7,7 +7,7 @@ O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399
   </form>
 </p>
 
-<h2>Popis portĂˇlu</h2>
+<h2>Popis portálu</h2>
 <p>
   <form method="post" action="p-edit">
     <input type="text" name="description" value="";i:6;s:2:"";i:7;s:11:"description";i:8;N;i:9;N;i:10;s:255:"" />
@@ -16,7 +16,7 @@ O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399
   </form>
 </p>
 
-<h2>KlĂ­ÄŤovĂˇ slova</h2>
+<h2>Klíčová slova</h2>
 <p>
   <form method="post" action="p-edit">
     <input type="text" name="keywords" value="";i:11;s:2:"";i:12;s:8:"keywords";i:13;N;i:14;N;i:15;s:177:"" />
@@ -25,10 +25,10 @@ O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399
   </form>
 </p>
 
-<h2>Aktualizace systĂ©mu</h2>
+<h2>Aktualizace systému</h2>
 <div class="";i:16;s:2:"";i:17;s:9:"updateDiv";i:18;N;i:19;N;i:20;s:39:"" id="update">
   <div class="fullRow">";i:21;s:2:"";i:22;s:13:"updateComment";i:23;N;i:24;N;i:25;s:69:"</div>
-  <span>NainstalovanĂˇ verze:&nbsp;</span><span class="bold">";i:26;s:2:"";i:27;s:14:"currentVersion";i:28;N;i:29;N;i:30;s:75:"</span><br />
-  <span>NejnovÄ›jĹˇĂ­ verze:&nbsp;</span><span class="bold">";i:31;s:2:"";i:32;s:13:"updateVersion";i:33;N;i:34;N;i:35;s:26:"</span><br />
+  <span>Nainstalovaná verze:&nbsp;</span><span class="bold">";i:26;s:2:"";i:27;s:14:"currentVersion";i:28;N;i:29;N;i:30;s:75:"</span><br />
+  <span>Nejnovější verze:&nbsp;</span><span class="bold">";i:31;s:2:"";i:32;s:13:"updateVersion";i:33;N;i:34;N;i:35;s:26:"</span><br />
   <a href="";i:36;s:2:"";i:37;s:10:"updateLink";i:38;N;i:39;N;i:40;s:9:"" class="";i:41;s:2:"";i:42;s:12:"updateButton";i:43;N;i:44;N;i:45;s:26:"">AKTUALIZOVAT</a>
-</div>";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1392425433;s:15:"_include_mtimes";a:0:{}}
+</div>";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1396999904;s:15:"_include_mtimes";a:0:{}}

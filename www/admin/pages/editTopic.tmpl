@@ -1,8 +1,8 @@
-<h2>Ăšprava ÄŤlĂˇnku - <TMPL_VAR title></h2>
+﻿<h2>Úprava článku - <TMPL_VAR title></h2>
 <form method="post" action="p-sendTopic">
   <TMPL_IF control>
   <div id="newTopicBtn">
-    <a href="p-delTopic?tid=<TMPL_VAR id>" onclick="return confirm('Opravdu chcete vymazat ÄŤlĂˇnek <TMPL_VAR title>?');">- Smazat ÄŤlĂˇnek</a>
+    <a href="p-delTopic?tid=<TMPL_VAR id>" onclick="return confirm('Opravdu chcete vymazat článek <TMPL_VAR title>?');">- Smazat článek</a>
   </div>
   </TMPL_IF>
   
@@ -10,28 +10,33 @@
     Titulek:&nbsp;
     <input type="text" name="title" value="<TMPL_VAR title>" />
   </p>
+
+  <p>
+    Kategorie:&nbsp;
+    <TMPL_SELECT categ | size="1">
+  </p>
   
   <p>
-    Text ÄŤlĂˇnku:<br />
+    Text článku:<br />
     <textarea name="content"><TMPL_VAR content></textarea>
   </p>
   
   <input type="hidden" name="id" value="<TMPL_VAR id>" />
-  <input type="submit" value="Zapsat do databĂˇze" />&nbsp;
+  <input type="submit" value="Zapsat do databáze" />&nbsp;
 </form>
 
 <TMPL_IF control>
-<h2>NahrĂˇvĂˇnĂ­ pĹ™Ă­loh</h2>
+<h2>Nahrávní příloh</h2>
 <form method="post" action="p-uploadAttach" enctype="multipart/form-data">
   <input type="file" name="photo[]" multiple="multiple" accept="image/*,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/plain,application/pdf" />
   <input type="hidden" name="control" value="topicFile" />
   <input type="hidden" name="folder" value="<TMPL_VAR id>" />
-  <input type="submit" value="NahrĂˇt na server" />
+  <input type="submit" value="Nahrát na server" />
 </form>
 <hr />
 <table>
   <tr class="headLine">
-    <th>JiĹľ nahranĂ© pĹ™Ă­lohy</th>
+    <th>Již nahrané přílohy</th>
   </tr>
 
   <TMPL_LOOP attachments>

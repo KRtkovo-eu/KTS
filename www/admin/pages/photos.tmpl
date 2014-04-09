@@ -1,8 +1,8 @@
-<h2>Alba fotogalerie</h2>
+﻿<h2>Alba fotogalerie</h2>
 <table>
   <tr class="photos">
-    <th>NĂˇzev alba</th>
-    <th>PoÄŤet fotografiĂ­</th>   
+    <th>Název alba</th>
+    <th>Počet fotografií</th>
     <th>Akce</th>
   </tr>
 <TMPL_LOOP Albums>
@@ -10,26 +10,26 @@
     <form method="post" action="p-albumProcess?action=rename&album=<TMPL_VAR title>">
     <td><input type="text" name="albumTitle" value="<TMPL_VAR title>" /></td>
     <td><TMPL_VAR count></td>
-    <td><input type="submit" value="PĹ™ejmenovat" />&nbsp;<a href="p-albumProcess?action=del&album=<TMPL_VAR title>" onclick="return confirm('Opravdu chcete smazat album <TMPL_VAR title>? Touto akcĂ­ smaĹľete vĹˇechny fotografie z tohoto alba.');">Smazat</a></td>
+    <td><input type="submit" value="Přejmenovat" />&nbsp;<a href="p-albumProcess?action=del&album=<TMPL_VAR title>" onclick="return confirm('Opravdu chcete smazat album <TMPL_VAR title>? Touto akcí smažete všechny fotografie z tohoto alba.');">Smazat</a></td>
     </form>
   </tr>
 </TMPL_LOOP>
   
   <tr class="photos">
-    <th colspan="3">NovĂ© album</th>
+    <th colspan="3">Nové album</th>
   </tr>
   
   <form method="post" action="p-albumProcess?action=create">
   <tr>
     <td colspan="2"><input type="text" name="albumTitle" /></td>
-    <td><input type="submit" value="VytvoĹ™it album" /></td>
+    <td><input type="submit" value="Vytvořit album" /></td>
   </tr>
   </form>
 </table>
 
-<h2>NahrĂˇvĂˇnĂ­ fotografiĂ­</h2>
+<h2>Nahrávání fotografií</h2>
 <form method="post" action="p-upload" enctype="multipart/form-data">
-  <p>VĂ˝bÄ›r alba: 
+  <p>Výběr alba:
   <select name="album">
     <TMPL_LOOP Albums>
     <option value="<TMPL_VAR title>"><TMPL_VAR title></option>
@@ -38,5 +38,5 @@
   
   <input type="file" name="photo[]" multiple="multiple" accept="image/jpeg" />
   <input type="hidden" name="control" value="gallery" />
-  <input type="submit" value="NahrĂˇt na server" />
+  <input type="submit" value="Nahrát na server" />
 </form>

@@ -1,7 +1,33 @@
-O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:17:"pages/topics.tmpl";s:7:"_tokens";a:36:{i:0;s:422:"<h2>SprĂˇva ÄŤlĂˇnkĹŻ</h2>
+O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:17:"pages/topics.tmpl";s:7:"_tokens";a:71:{i:0;s:134:"﻿<h2>Správa kategorií</h2>
+<table>
+  <tr class="headLine">
+    <th>ID</th>
+    <th>Název</th>
+    <th>Akce</th>
+  </tr>
+
+";i:1;s:2:"";i:2;s:10:"Categories";i:3;N;i:4;N;i:5;s:65:"  <form method="post" action="p-editCateg">
+    <tr>
+      <td>";i:6;s:2:"";i:7;s:7:"categId";i:8;N;i:9;N;i:10;s:43:"</td>
+      <td><input type="text" value="";i:11;s:2:"";i:12;s:9:"categName";i:13;N;i:14;N;i:15;s:67:"" name="categ_title" /><input type="hidden" name="categ_id" value="";i:16;s:2:"";i:17;s:7:"categId";i:18;N;i:19;N;i:20;s:94:"" /></td>
+      <td><input type="submit" value="Přejmenovat" />&nbsp;<a href="p-delCateg?id=";i:21;s:2:"";i:22;s:7:"categId";i:23;N;i:24;N;i:25;s:60:"" onclick="return confirm('Opravdu chcete vymazat kategorii ";i:26;s:2:"";i:27;s:9:"categName";i:28;N;i:29;N;i:30;s:45:"?');">Smazat</a></td>
+    </tr>
+  </form>
+";i:31;s:2:"";i:32;N;i:33;N;i:34;N;i:35;s:793:"    <tr class="headLine">
+      <th colspan="3">Vytvořit novou kategorii</th>
+    </tr>
+    <tr>
+      <form method="post" action="p-editCateg">
+        <td colspan="2"><input type="text" name="categ_title" /><input type="hidden" name="categ_id" value="new" /></td>
+        <td><input type="submit" value="Vytvořit" /></td>
+      </form>
+    </tr>
+</table>
+
+<h2>Správa článků</h2>
 
 <div id="newTopicBtn">
-  <a href="p-editTopic?tid=NEW">+ VytvoĹ™it novĂ˝ ÄŤlĂˇnek</a>
+  <a href="p-editTopic?tid=NEW">+ Vytvořit nový článek</a>
 </div>
 
 <table>
@@ -9,19 +35,19 @@ O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399
     <th><a href="p-topics?order=id">ID</a></th>
     <th><a href="p-topics?order=categ">Kategorie</a></th>
     <th><a href="p-topics?order=title">Titulek</a></th>
-    <th><a href="p-topics?order=date">Datum vydĂˇnĂ­</a></th>
+    <th><a href="p-topics?order=date">Datum vydání</a></th>
     <th>Akce</th>
   </tr>
   
-";i:1;s:2:"";i:2;s:6:"Topics";i:3;N;i:4;N;i:5;s:16:"  <tr>
-    <td>";i:6;s:2:"";i:7;s:7:"topicId";i:8;N;i:9;N;i:10;s:15:"</td>
-    <td>";i:11;s:2:"";i:12;s:10:"topicCateg";i:13;N;i:14;N;i:15;s:15:"</td>
-    <td>";i:16;s:2:"";i:17;s:10:"topicTitle";i:18;N;i:19;N;i:20;s:15:"</td>
-    <td>";i:21;s:2:"";i:22;s:9:"topicDate";i:23;N;i:24;N;i:25;s:48:"</td>
+";i:36;s:2:"";i:37;s:6:"Topics";i:38;N;i:39;N;i:40;s:16:"  <tr>
+    <td>";i:41;s:2:"";i:42;s:7:"topicId";i:43;N;i:44;N;i:45;s:15:"</td>
+    <td>";i:46;s:2:"";i:47;s:10:"topicCateg";i:48;N;i:49;N;i:50;s:15:"</td>
+    <td>";i:51;s:2:"";i:52;s:10:"topicTitle";i:53;N;i:54;N;i:55;s:15:"</td>
+    <td>";i:56;s:2:"";i:57;s:9:"topicDate";i:58;N;i:59;N;i:60;s:48:"</td>
     <td>
-      <a href="p-editTopic?tid=";i:26;s:2:"";i:27;s:7:"topicId";i:28;N;i:29;N;i:30;s:35:"">Upravit</a>
+      <a href="p-editTopic?tid=";i:61;s:2:"";i:62;s:7:"topicId";i:63;N;i:64;N;i:65;s:35:"">Upravit</a>
     </td>
   </tr>
-";i:31;s:2:"";i:32;N;i:33;N;i:34;N;i:35;s:12:"</table>
+";i:66;s:2:"";i:67;N;i:68;N;i:69;N;i:70;s:12:"</table>
 
-";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1392425911;s:15:"_include_mtimes";a:0:{}}
+";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1397004595;s:15:"_include_mtimes";a:0:{}}
