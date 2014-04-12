@@ -734,7 +734,7 @@ class TemplateProcessor {
                     $escape = $tokens[$i + _PARAM_ESCAPE];
                     $global = $tokens[$i + _PARAM_GLOBAL];
                     $skip_params = TRUE;
-                    
+
                     # If output of current block is not disabled then append
                     # the substitued and escaped variable to the output.
                     if (! in_array($DISABLE_OUTPUT, $output_control)) {

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 function cesky_mesic($mesic) {
     static $nazvy = array(1 => 'leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec');

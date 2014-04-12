@@ -1,22 +1,19 @@
-  <div id="container">
-    <div id="content">
-      <h1><TMPL_VAR title></h1>
-      <TMPL_VAR content ESCAPE="NONE">
-      
-      
-      <TMPL_IF control>
-      <hr />
-      <table>
-        <tr>
-          <th>PĹ™Ă­loha</th>
-        </tr>
-      
-        <TMPL_LOOP attachments>
-        <tr>
-          <td><a href="attachment/<TMPL_VAR id>/<TMPL_VAR title>"><TMPL_VAR title></a></td>
-        </tr>
-        </TMPL_LOOP>
-      </table>
-      </TMPL_IF>
-    </div>
+  <div id="titleBlock">
+    <h1><TMPL_VAR title></h1>
   </div>
+
+  <div id="contentBlock">
+    <p class="note">autor | <TMPL_VAR date> | kategorie</p>
+    <TMPL_VAR content ESCAPE="NONE">
+  </div>
+
+  <TMPL_IF control>
+  <div id="attachmentsBlock">
+    <h3>Přílohy:</h3>
+    <TMPL_LOOP attachment>
+      <a href="attachment/<TMPL_VAR id>/<TMPL_VAR file>"><div class="menuItem fltLeft"><TMPL_VAR file></div></a>
+    </TMPL_LOOP>
+    <div class="clear"></div>
+  </div>
+  </TMPL_IF>
+

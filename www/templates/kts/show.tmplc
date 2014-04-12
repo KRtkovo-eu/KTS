@@ -1,17 +1,15 @@
-O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:24:"templates/zpnj/show.tmpl";s:7:"_tokens";a:46:{i:0;s:58:"  <div id="container">
-    <div id="content">
-      <h1>";i:1;s:2:"";i:2;s:5:"title";i:3;N;i:4;N;i:5;s:7:"</h1>
-";i:6;s:2:"";i:7;s:7:"content";i:8;s:4:"NONE";i:9;N;i:10;s:16:"      
-      
-";i:11;s:2:"";i:12;s:7:"control";i:13;N;i:14;N;i:15;s:96:"      <hr />
-      <table>
-        <tr>
-          <th>PĹ™Ă­loha</th>
-        </tr>
-      
-";i:16;s:2:"";i:17;s:11:"attachments";i:18;N;i:19;N;i:20;s:48:"        <tr>
-          <td><a href="attachment/";i:21;s:2:"";i:22;s:2:"id";i:23;N;i:24;N;i:25;s:1:"/";i:26;s:2:"";i:27;s:5:"title";i:28;N;i:29;N;i:30;s:2:"">";i:31;s:2:"";i:32;s:5:"title";i:33;N;i:34;N;i:35;s:26:"</a></td>
-        </tr>
-";i:36;s:2:"";i:37;N;i:38;N;i:39;N;i:40;s:16:"      </table>
-";i:41;s:2:"";i:42;N;i:43;N;i:44;N;i:45;s:20:"    </div>
-  </div>";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1392430641;s:15:"_include_mtimes";a:0:{}}
+O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:23:"templates/kts/show.tmpl";s:7:"_tokens";a:51:{i:0;s:33:"  <div id="titleBlock">
+    <h1>";i:1;s:2:"";i:2;s:5:"title";i:3;N;i:4;N;i:5;s:74:"</h1>
+  </div>
+
+  <div id="contentBlock">
+    <p class="note">autor | ";i:6;s:2:"";i:7;s:4:"date";i:8;N;i:9;N;i:10;s:18:" | kategorie</p>
+";i:11;s:2:"";i:12;s:7:"content";i:13;s:4:"NONE";i:14;N;i:15;s:12:"  </div>
+
+";i:16;s:2:"";i:17;s:7:"control";i:18;N;i:19;N;i:20;s:56:"  <div id="attachmentsBlock">
+    <h3>Přílohy:</h3>
+";i:21;s:2:"";i:22;s:10:"attachment";i:23;N;i:24;N;i:25;s:26:"      <a href="attachment/";i:26;s:2:"";i:27;s:2:"id";i:28;N;i:29;N;i:30;s:1:"/";i:31;s:2:"";i:32;s:4:"file";i:33;N;i:34;N;i:35;s:32:""><div class="menuItem fltLeft">";i:36;s:2:"";i:37;s:4:"file";i:38;N;i:39;N;i:40;s:12:"</div></a>
+";i:41;s:2:"";i:42;N;i:43;N;i:44;N;i:45;s:41:"    <div class="clear"></div>
+  </div>
+";i:46;s:2:"";i:47;N;i:48;N;i:49;N;i:50;s:2:"
+";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1397266176;s:15:"_include_mtimes";a:0:{}}

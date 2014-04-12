@@ -1,13 +1,13 @@
-﻿#RewriteBase /admin/
+#RewriteBase /admin/
 RewriteEngine on
 RewriteRule ^p-(.*) index.php?page=$1 [QSA,NC]
 #
 # Autentizace
-AuthUserFile /home/a3672622/public_html/admin/.htpasswd
-AuthName "Login to administration of KTS"
-AuthType Basic
-require valid-user
-Options Indexes FollowSymLinks
+#AuthUserFile /admin/.htpasswd
+#AuthName "Login to administration of KTS"
+#AuthType Basic
+#require valid-user
+#Options Indexes FollowSymLinks
 
 #<IfModule mod_php5.c>
 #php_value post_max_size 100M

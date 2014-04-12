@@ -15,13 +15,13 @@ function ktsTitle($db) {
 	    break;
 	    
 	  case 'categories':
-	    $cid = $_GET['cid'];
+	    $cid = $_GET['id'];
 	    $categoryTitle = $db->QueryValue("title","kts_categories","id='{$cid}'");
 	    $title = "{$categoryTitle} - {$portalTitle}";
 	    break;
 	    
 	  case 'show':
-	    $tid = $_GET['tid'];
+	    $tid = $_GET['id'];
 	    $topicTitle = $db->QueryValue("title","kts_topics","id='{$tid}'");
 	    $title = "{$topicTitle} - {$portalTitle}";
 	    break;

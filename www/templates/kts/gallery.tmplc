@@ -1,4 +1,4 @@
-O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:27:"templates/zpnj/gallery.tmpl";s:7:"_tokens";a:36:{i:0;s:111:"  <div id="container">
+O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:26:"templates/kts/gallery.tmpl";s:7:"_tokens";a:36:{i:0;s:111:"  <div id="container">
     <div id="content">
         <h1>Alba fotogalerie</h1>
         <div id="gallery">
@@ -11,4 +11,4 @@ O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399
 ";i:31;s:2:"";i:32;N;i:33;N;i:34;N;i:35;s:73:"          <div class="clear"></div>
         </div>
     </div>
-  </div>";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1390366124;s:15:"_include_mtimes";a:0:{}}
+  </div>";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1392526387;s:15:"_include_mtimes";a:0:{}}

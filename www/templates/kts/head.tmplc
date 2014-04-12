@@ -1,15 +1,15 @@
-O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:24:"templates/zpnj/head.tmpl";s:7:"_tokens";a:21:{i:0;s:213:"<!DOCTYPE HTML>
+O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399658203125;s:5:"_file";s:23:"templates/kts/head.tmpl";s:7:"_tokens";a:21:{i:0;s:210:"<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="OndĹ™ej Kotas, KRtkovo.eu - design studio" />
+  <meta name="author" content="Ondřej Kotas, KRtkovo.eu - design studio" />
   <meta name="description" content="";i:1;s:2:"";i:2;s:15:"headDescription";i:3;N;i:4;N;i:5;s:39:"" />
   <meta name="keywords" content="";i:6;s:2:"";i:7;s:12:"headKeywords";i:8;N;i:9;N;i:10;s:67:"" />
   <meta name="robots" content="index, follow" />
 
   <title>";i:11;s:2:"";i:12;s:9:"headTitle";i:13;N;i:14;N;i:15;s:36:"</title>
 
-  <link href="templates/";i:16;s:2:"";i:17;s:12:"headTemplate";i:18;N;i:19;N;i:20;s:871:"/style.css" rel="stylesheet" type="text/css" media="screen,projection" />
+  <link href="templates/";i:16;s:2:"";i:17;s:12:"headTemplate";i:18;N;i:19;N;i:20;s:796:"/style.css" rel="stylesheet" type="text/css" media="screen,projection" />
   <link href="lightbox.css" rel="stylesheet" type="text/css" media="screen,projection" />
   <link href="favicon.ico" rel="icon" />
 
@@ -21,5 +21,5 @@ O:8:"Template":6:{s:8:"_version";d:1.2199999999999999733546474089962430298328399
   <script type="text/javascript" src="functions/js/lightbox-2.6.min.js"></script>
   
   <script type="text/javascript" src="functions/js/external.js"></script>
-  <script type="text/javascript" src="functions/js/donnations.js"></script>
-</head>";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1392526387;s:15:"_include_mtimes";a:0:{}}
+</head>
+";}s:15:"_compile_params";a:5:{i:0;b:1;i:1;i:5;i:2;b:1;i:3;b:0;i:4;a:0:{}}s:6:"_mtime";i:1397252926;s:15:"_include_mtimes";a:0:{}}

@@ -1,14 +1,16 @@
-  <div id="container">
-    <div id="content">
-      <h1>VĂ˝pis ÄŤlĂˇnkĹŻ z kategorie: <TMPL_VAR title></h1>
-        <ul>
-        <TMPL_LOOP Topics>
-          <li>
-            <a href="p-show?tid=<TMPL_VAR topicId>">
-              <TMPL_VAR topicTitle>
-            </a>
-          </li>
-        </TMPL_LOOP>
-        </ul>
-    </div>
+  <div id="titleBlock">
+    <h1>Všechny články z kategorie <TMPL_VAR title></h1>
   </div>
+
+  <div id="contentBlock">
+    <ul>
+    <TMPL_LOOP topics>
+      <li>
+        <a href="p-show?id=<TMPL_VAR topicId>">
+          <TMPL_VAR topicTitle>
+        </a>
+      </li>
+    </TMPL_LOOP>
+    </ul>
+  </div>
+
