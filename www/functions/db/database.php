@@ -2,7 +2,7 @@
 /**************************************/
 /*   KTS Database connection module   */
 /*      License GNU GPL v3 2013       */
-/*       Author: OndĹ™ej Kotas         */
+/*       Author: Ondřej Kotas         */
 /*    URL: http://soft.krtkovo.eu/    */
 /**************************************/
 

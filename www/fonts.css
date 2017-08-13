@@ -1,0 +1,77 @@
+/* TexGyre family */
+@font-face {
+  font-family: TexGyre;
+  src: url('fonts/TexGyreAdventorFamily/texgyreadventor-regular.otf');
+}
+
+@font-face {
+  font-family: TexGyre;
+  font-weight: bold;
+  src: url('fonts/TexGyreAdventorFamily/texgyreadventor-bold.otf');
+}
+
+@font-face {
+  font-family: TexGyre;
+  font-style: italic;
+  src: url('fonts/TexGyreAdventorFamily/texgyreadventor-italic.otf');
+}
+
+@font-face {
+  font-family: TexGyre;
+  font-weight: bold;
+  font-style: italic;
+  src: url('fonts/TexGyreAdventorFamily/texgyreadventor-bolditalic.otf');
+}
+
+/* Aller family */
+@font-face {
+  font-family: Aller;
+  src: url('fonts/AllerFamily/Aller_Rg.otf');
+}
+
+@font-face {
+  font-family: Aller;
+  font-weight: bold;
+  src: url('fonts/AllerFamily/Aller_Bd.otf');
+}
+
+@font-face {
+  font-family: AllerLight;
+  src: url('fonts/AllerFamily/Aller_Lt.otf');
+}
+
+/* ChaparralPro family */
+@font-face {
+  font-family: Chaparral;
+  src: url('fonts/ChaparralFamily/ChaparralPro-Regular.otf');
+}
+
+@font-face {
+  font-family: Chaparral;
+  font-weight: bold;
+  src: url('fonts/ChaparralFamily/ChaparralPro-Bold.otf');
+}
+
+@font-face {
+  font-family: Chaparral;
+  font-style: italic;
+  src: url('fonts/ChaparralFamily/ChaparralPro-Italic.otf');
+}
+
+@font-face {
+  font-family: Chaparral;
+  font-weight: bold;
+  font-style: italic;
+  src: url('fonts/ChaparralFamily/ChaparralPro-BoldIt.otf');
+}
+
+/* Share family */
+@font-face {
+  font-family: Share;
+  src: url('fonts/ShareFamily/Share-regular.otf');
+}
+
+@font-face {
+  font-family: ShareMonospace;
+  src: url('fonts/ShareFamily/Share-mono.otf');
+}
