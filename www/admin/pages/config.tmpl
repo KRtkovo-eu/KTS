@@ -1,4 +1,4 @@
-﻿<h2>Titulek portálu</h2>
+<h2>Titulek portálu</h2>
 <p>
   <form method="post" action="p-edit">
     <input type="text" name="title" value="<TMPL_VAR title>" />
@@ -24,11 +24,3 @@
     <input type="submit" value="Aktualizuj" />
   </form>
 </p>
-
-<h2>Aktualizace systému</h2>
-<div class="<TMPL_VAR updateDiv>" id="update">
-  <div class="fullRow"><TMPL_VAR updateComment></div>
-  <span>Nainstalovaná verze:&nbsp;</span><span class="bold"><TMPL_VAR currentVersion></span><br />
-  <span>Nejnovější verze:&nbsp;</span><span class="bold"><TMPL_VAR updateVersion></span><br />
-  <a href="<TMPL_VAR updateLink>" class="<TMPL_VAR updateButton>">AKTUALIZOVAT</a>
-</div>
